@@ -22,11 +22,12 @@ function mostrarDatosClima(data) {
     divDatosClima.innerHTML = ''
 
     const nombreCiudad = data.name
+    const paisCiudad = data.sys.country
     const temperaturaCiudad = data.main.temp
     const descripcionCiudad = data.weather[0].description
 
     const ciudadTitulo = document.createElement('h2')
-    ciudadTitulo.textContent = nombreCiudad
+    ciudadTitulo.textContent = `${nombreCiudad},${paisCiudad}`
 
     const temperaturaInfo = document.createElement('p')
     temperaturaInfo.innerHTML = `La temperatura de la ciudad es de <b>${temperaturaCiudad}°C</b>`
@@ -37,5 +38,4 @@ function mostrarDatosClima(data) {
     divDatosClima.appendChild(ciudadTitulo)
     divDatosClima.appendChild(temperaturaInfo)
     divDatosClima.appendChild(infoCiudad)
-
 }
