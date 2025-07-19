@@ -33,7 +33,7 @@ function mostrarDatosClima(data) {
     temperaturaInfo.innerHTML = `La temperatura de la ciudad es de <b>${temperaturaCiudad}°C</b>`
 
     const infoCiudad = document.createElement('p')
-    infoCiudad.innerHTML = `El cielo cuenta con <b>${descripcionCiudad}</b>`
+    infoCiudad.innerHTML = `Descripción meteorológica: <b>${descripcionCiudad}</b>`
 
     divDatosClima.appendChild(ciudadTitulo)
     divDatosClima.appendChild(temperaturaInfo)
