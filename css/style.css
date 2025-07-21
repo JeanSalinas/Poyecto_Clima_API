@@ -4,9 +4,9 @@ body {
     display: flex;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
 }
-h1{
+
+h1 {
     font-size: 2.5rem;
     color: #bdbbbb;
     -webkit-text-stroke: 2px green;
@@ -33,6 +33,7 @@ input[type="text"] {
     background-color: #dbdbdb;
     border-bottom: 1px solid black;
     border-radius: 5px;
+    font-size: 2rem;
 }
 
 input[type="text"]:focus {
@@ -69,16 +70,18 @@ button:hover {
     font-size: 1rem;
 }
 
-@media (max-width:480px) {
-    .contenedor{
-        box-shadow: none;
+@media (max-width:800px) {
+    .contenedor {
         background-color: #e4e4e4;
+        box-shadow: none;
     }
-    input[type="text"]{
-        width: 90%;
+
+    input[type="text"] {
+        width: 80%;
     }
-    button{
-        width: 40%;
+
+    button {
         margin-top: 1vh;
+        width: 40%;
     }
 }
