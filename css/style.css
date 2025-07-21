@@ -1,10 +1,19 @@
 body {
     background-color: #e4e4e4;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+h1{
+    font-size: 2.5rem;
+    color: #bdbbbb;
+    -webkit-text-stroke: 2px green;
 }
 
 .contenedor {
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -13,7 +22,7 @@ body {
 }
 
 img {
-    height: 25vh;
+    height: 45vh;
 }
 
 input[type="text"] {
@@ -23,6 +32,7 @@ input[type="text"] {
     border: none;
     background-color: #dbdbdb;
     border-bottom: 1px solid black;
+    border-radius: 5px;
 }
 
 input[type="text"]:focus {
@@ -43,7 +53,7 @@ input[type="text"]:focus::placeholder {
 }
 
 button {
-    width: 22%;
+    width: 20%;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -57,4 +67,18 @@ button:hover {
     transform: scale(1.1);
     box-shadow: 1px 1px 15px rgb(124, 228, 124);
     font-size: 1rem;
+}
+
+@media (max-width:480px) {
+    .contenedor{
+        box-shadow: none;
+        background-color: #e4e4e4;
+    }
+    input[type="text"]{
+        width: 90%;
+    }
+    button{
+        width: 40%;
+        margin-top: 1vh;
+    }
 }
