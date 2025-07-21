@@ -70,7 +70,7 @@ button:hover {
     font-size: 1rem;
 }
 
-@media (max-width:800px) {
+@media (max-width:1024px) {
     .contenedor {
         background-color: #e4e4e4;
         box-shadow: none;
