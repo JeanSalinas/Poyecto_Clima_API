@@ -10,14 +10,14 @@
     <link rel="shortcut icon" href="./assets/icon/clima.png" type="image/x-icon">
 </head>
 
-<body>
-    <div class="contenedor">
-        <h1>Aplicación del clima</h1>
-        <div class="contenedorImg">
-            <img src="./assets/images/clima.png" alt="">
+<body class="d-flex flex-column align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="contenedor container">
+        <h1 class="mb-4">Aplicación del clima</h1>
+        <div class="mb-3">
+            <img class="contenedorImg img-fluid" src="./assets/images/clima.png" alt="Icono clima">
         </div>
-        <input type="text" id="datosEntrada" placeholder="Ingrese el nombre de la ciudad">
-        <button id="buscar">Buscar</button>
+        <input type="text" class="form-control mx-auto my-3 custom-input" id="datosEntrada" placeholder="Ingrese el nombre de la ciudad">
+        <button class="btn btn-success custom-button" id="buscar">Buscar</button>
         <div id="datosClima"></div>
     </div>
     <script src="./js/script.js"></script>
